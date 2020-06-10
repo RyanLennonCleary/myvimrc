@@ -7,7 +7,11 @@ Plugin 'morhetz/gruvbox'
 Plugin 'wikitopian/hardmode'
 Plugin 'vim-airline/vim-airline'
 Plugin 'valloric/youcompleteme'
-""dPlugin '
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'raimondi/delimitmate'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'ekalinin/dockerfile.vim'
 call vundle#end()
 filetype indent on
 set autoindent
@@ -47,4 +51,9 @@ set confirm
 set noswapfile
 set formatoptions+=j
 set history=1000
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+au VimEnter,BufNewFile,BufReadPost * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
