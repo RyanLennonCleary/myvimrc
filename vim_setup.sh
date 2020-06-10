@@ -31,6 +31,5 @@ python3 install.py --all
 
 alias vim='mvim -v'
 
-
-
-
+#Open .vimrc#
+:PluginInstall
