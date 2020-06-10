@@ -17,7 +17,7 @@ brew install bash-completion
 brew cask install iterm2
 
 #Open .vimrc#
-:PluginInstall
+#:PluginInstall
 #install will fail but it will download youcompleteme files to the correct directory#
 
 brew install cmake macvim python mono go nodejs
@@ -32,4 +32,4 @@ python3 install.py --all
 alias vim='mvim -v'
 
 #Open .vimrc#
-:PluginInstall
+#:PluginInstall
